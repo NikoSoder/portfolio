@@ -1,0 +1,172 @@
+/* MOBILE VIEW */
+/* FIX STICKY NAV NOT WORKINGGGGGGGGGGGGGGGGGGG */
+
+/* FONT COLORS */ 
+/* color: #fff;
+color: #9cb3c9;
+color: #b6cce2;
+color: #ced9e4; */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth !important;
+    font-family: 'Lato', sans-serif; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+  
+.home-section {
+    height: 100%;
+    /* background-color: #0e2439; */
+    background: linear-gradient(90deg, rgba(14,36,57,1) 0%, rgba(31,54,77,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+/* NAV LOGO */
+.fa-bars {
+    color: #edf0f8;
+}
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+header h1 a {
+    color: #edf0f8;
+    padding-left: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+  
+.button-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+.button-nav {
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    margin: 1rem 2rem 1rem 1rem;
+}
+  
+nav {
+    background-color: #0e2439;
+    padding: 0.8rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%);
+}
+  
+nav ul {
+    /* position: relative; */
+    width: 101%;
+    background-color: #142738;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0.8rem 0 0 0;
+    margin-inline-start: -1rem;
+    animation: ul-anim 500ms;
+    border-top: 2px solid #9cb3c9;
+    border-bottom: 2px solid #9cb3c9;
+}
+  
+@keyframes ul-anim {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+nav ul li {
+    padding: 0.3rem;
+    /* list-style: none; */
+    text-align: center;
+    border-top: 1px solid black;
+}
+  
+nav ul li:hover {
+    background-color: #9cb3c9;
+    transition: 1s;
+}
+  
+.hide-nav {
+    display: none;
+}
+  
+.nav-li a {
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    
+}
+  
+.introduction {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introduction .name {
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 13px 15px 6px rgba(0, 0, 0, 0.36);
+    animation: introduction-animation 7s infinite forwards;
+    
+}
+  
+.introduction .p-intro {
+    text-shadow: 13px 15px 6px rgba(0, 0, 0, 0.36);
+    
+    font-size: 2rem;
+    color: #b6cce2;
+    animation: introduction-animation 7s infinite;
+}
+  
+.scroll-down {
+    padding: 3rem;
+    background: none;
+    border: none;
+}
+
+/* SCROLL DOWN LOGO */
+.fa-angles-down {
+    color: #b6cce2;
+}
+
+@keyframes introduction-animation {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+      transform: translateY(1rem);
+    }
+    100% {
+      opacity: 0;
+    }
+}
