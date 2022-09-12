@@ -246,14 +246,14 @@ nav ul li:hover {
   display: flex;
   flex-direction: row;
   /* padding: 5rem; */
-  margin: 0 0 5rem 0;
+  margin: 1.5rem 0 5rem 0;
   border-radius: 15px 0 15px 0;
   box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%);
   background-color: #1f364d;
 }
 
 #project-article-second {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .picture-div {
@@ -272,3 +272,40 @@ article .p-div {
   margin: 1rem;
   color: #9cb3c9;
 }
+
+/* FOOTER */
+
+footer {
+  /* background-color: #374c65; */
+  background-color: #1f354d;
+  min-height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li {
+  padding: 1rem;
+}
+
+footer ul li i {
+  color: #9cb3c9;
+}
+
+ul li span {
+  color: #9cb3c9;
+  font-size: 1rem;
+}
+
+/* footer ul li img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: scale-down;
+} */
