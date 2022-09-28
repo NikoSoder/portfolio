@@ -79,7 +79,7 @@ nav {
 
 nav ul {
   /* position: relative; */
-  width: 101%;
+  /* width: 101%; */
   background-color: #0e2439;
   position: absolute;
   display: flex;
@@ -164,14 +164,14 @@ nav ul li:hover {
 
 @keyframes introduction-animation {
   0% {
-    opacity: 0;
+    opacity: 0.4;
   }
   50% {
     opacity: 1;
     transform: translateY(1rem);
   }
   100% {
-    opacity: 0;
+    opacity: 0.4;
   }
 }
 
@@ -259,9 +259,9 @@ nav ul li:hover {
   order: 2;
 }
 
-#project-article-second {
+/* #project-article-second {
   margin-bottom: 4rem;
-}
+} */
 
 .picture-div {
   background-color: #9aa8cb32;
@@ -337,3 +337,47 @@ ul li span {
   height: 7rem;
   object-fit: scale-down;
 } */
+
+@media only screen and (min-width: 520px) {
+  .projects-container {
+    display: flex;
+  }
+
+  .projects-container > * {
+    flex: 1;
+    margin: 1.5rem 2rem 5rem 2rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button-div {
+    display: none;
+  }
+
+  .hide-nav {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+    border: none;
+  }
+
+  .hide-nav li {
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .about-container {
+    display: flex;
+    margin: 2rem;
+  }
+
+  .about-container > * {
+    flex: 1;
+  }
+}
