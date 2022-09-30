@@ -28,6 +28,7 @@ body {
   height: 100%;
   /* background-color: #0e2439; */
   background-color: #1f354d;
+
   /* background: linear-gradient(
     90deg,
     rgba(14, 36, 57, 1) 0%,
@@ -45,14 +46,14 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-header h1 a {
+header h1 {
   color: #edf0f8;
   padding-left: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 
@@ -70,17 +71,22 @@ header h1 a {
 }
 
 nav {
-  background-color: #0e2439;
-  padding: 0.8rem;
-  position: fixed;
-  top: 0;
+  background-color: #224364;
+  padding: 3rem;
+  /* position: fixed; */
+  /* top: 0; */
   width: 100%;
   box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%);
 }
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
 
-nav ul {
-  /* position: relative; */
-  /* width: 101%; */
+/* nav ul {
+  position: relative; 
+  width: 101%; 
   background-color: #0e2439;
   position: absolute;
   display: flex;
@@ -102,7 +108,7 @@ nav ul {
   100% {
     opacity: 1;
   }
-}
+} */
 
 nav ul li {
   padding: 0.3rem;
@@ -345,17 +351,17 @@ ul li span {
     margin: 1.5rem 2rem 5rem 2rem;
   }
 
-  nav {
+  /* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 
-  .button-div {
+  /* .button-div {
     display: none;
-  }
+  } */
 
-  .hide-nav {
+  /* .hide-nav {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -365,7 +371,7 @@ ul li span {
 
   .hide-nav li {
     border: none;
-  }
+  } */
 }
 
 /* SCROLL ANIMATIONS MEDIA QUERY */
@@ -381,7 +387,7 @@ ul li span {
 
   .about-animation {
     animation-name: wipe-from-right;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
     /* animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
     /* animation-iteration-count: infinite; */
@@ -401,7 +407,8 @@ ul li span {
 
 @media only screen and (min-width: 1200px) {
   main {
-    padding: 0 10rem 0 10rem;
+    padding: 4rem 10rem 0 10rem;
+
     background-color: #1f354d;
     /* background: linear-gradient(
       90deg,
