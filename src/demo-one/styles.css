@@ -27,14 +27,15 @@ body {
 .home-section {
   height: 100%;
   /* background-color: #0e2439; */
-  background: linear-gradient(
+  background-color: #1f354d;
+  /* background: linear-gradient(
     90deg,
     rgba(14, 36, 57, 1) 0%,
     rgba(31, 54, 77, 1) 100%
   );
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* NAV LOGO */
@@ -194,8 +195,8 @@ nav ul li:hover {
 
 .about-p {
   font-size: 2rem;
-  max-width: 90%;
-  margin-bottom: 1.5rem;
+  /* max-width: 90%; */
+  margin: 0 1rem 1.5rem 1rem;
   color: #9cb3c9;
   /* color: #ced9e4; */
   border: 3px solid #1f364d;
@@ -332,11 +333,7 @@ ul li span {
   font-size: 1rem;
 }
 
-/* footer ul li img {
-  width: 7rem;
-  height: 7rem;
-  object-fit: scale-down;
-} */
+/* MEDIA QUERYS */
 
 @media only screen and (min-width: 520px) {
   .projects-container {
@@ -371,6 +368,26 @@ ul li span {
   }
 }
 
+/* SCROLL ANIMATIONS MEDIA QUERY */
+
+@media only screen and (min-width: 698px) {
+  .projects-animation {
+    animation-name: wipe-from-left;
+    animation-duration: 2s;
+    /* animation-timing-function: ease-in-out; */
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* animation-iteration-count: infinite; */
+  }
+
+  .about-animation {
+    animation-name: wipe-from-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    /* animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
+    /* animation-iteration-count: infinite; */
+  }
+}
+
 @media only screen and (min-width: 840px) {
   .about-container {
     display: flex;
@@ -379,5 +396,49 @@ ul li span {
 
   .about-container > * {
     flex: 1;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    padding: 0 10rem 0 10rem;
+    background-color: #1f354d;
+    /* background: linear-gradient(
+      90deg,
+      rgba(14, 36, 57, 1) 0%,
+      rgba(31, 54, 77, 1) 100%
+    ); */
+  }
+  .about-section {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .projects-section {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/* SCROLL ANIMATIONS */
+
+@keyframes wipe-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wipe-from-right {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    /* translateX(4rem) */
+  }
+
+  100% {
+    opacity: 1;
   }
 }
