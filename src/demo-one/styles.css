@@ -255,9 +255,9 @@ nav ul li:hover {
   /* padding: 5rem; */
   margin: 1.5rem 2rem 5rem 2rem;
   border-radius: 15px;
-  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%);
-  background-color: #1f364d;
-  padding: 0 0 3rem 0;
+  /* box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%); */
+  background-color: #091f33;
+  /* padding: 0 0 3rem 0; */
 }
 
 .projects-section article > * {
@@ -277,6 +277,20 @@ nav ul li:hover {
 }
 
 article .p-div {
+  /* background-color: #1d65a8; */
+  background-color:#1f354d;
+  padding-bottom: 2rem;
+}
+
+.projects-container {
+  background-color: #091f33;
+}
+
+
+article video {
+  max-width: 100%;
+  display: block;
+  /* border-radius: 5px; */
 }
 
 .p-div h3 {
@@ -295,13 +309,19 @@ article .p-div {
 }
 
 .projects-a {
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
   font-size: 1.5rem;
   color: #fff;
   cursor: pointer;
   text-decoration: none;
   border: 1px solid #bac3cb;
-  margin: 1rem;
+  /* margin: 2rem; */
+  margin-bottom: 3rem;
+  transition: background-color 500ms;
+}
+
+.projects-a:hover {
+  background-color: #47729e;
 }
 
 .live-app-a {
@@ -342,14 +362,26 @@ ul li span {
 /* MEDIA QUERYS */
 
 @media only screen and (min-width: 520px) {
-  .projects-container {
+
+
+  .projects-container article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .projects-container article > * {
+    flex: 1;
+  }
+
+  
+  /* .projects-container {
     display: flex;
   }
 
   .projects-container > * {
     flex: 1;
     margin: 1.5rem 2rem 5rem 2rem;
-  }
+  } */
 
   /* nav {
     display: flex;
@@ -422,6 +454,31 @@ ul li span {
 
   .projects-section {
     border-radius: 0 0 10px 10px;
+  }
+}
+
+
+@media only screen and (min-width: 1500px) {
+  main {
+    padding: 4rem 20rem 0 20rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  main {
+    padding: 4rem 30rem 0 30rem;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  main {
+    padding: 4rem 40rem 0 40rem;
+  }
+}
+
+@media only screen and (min-width: 2300px) {
+  main {
+    padding: 4rem 50rem 0 50rem;
   }
 }
 

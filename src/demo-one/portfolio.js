@@ -14,33 +14,33 @@ let li = document.querySelectorAll(".nav-li");
   });
 }); */
 
-const projectsSection = document.querySelector(".projects-section");
-const aboutSection = document.querySelector(".about-section");
+// const projectsSection = document.querySelector(".projects-section");
+// const aboutSection = document.querySelector(".about-section");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const projects = entry.target.querySelector(".projects-container");
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     const projects = entry.target.querySelector(".projects-container");
 
-    if (entry.isIntersecting) {
-      projects.classList.add("projects-animation");
-      return;
-    }
-    projects.classList.remove("projects-animation");
-  });
-});
+//     if (entry.isIntersecting) {
+//       projects.classList.add("projects-animation");
+//       return;
+//     }
+//     projects.classList.remove("projects-animation");
+//   });
+// });
 
-const observerSecond = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const about = entry.target.querySelector(".about-container");
+// const observerSecond = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     const about = entry.target.querySelector(".about-container");
 
-    if (entry.isIntersecting) {
-      about.classList.add("about-animation");
-      return;
-    }
-    about.classList.remove("about-animation");
-  });
-});
+//     if (entry.isIntersecting) {
+//       about.classList.add("about-animation");
+//       return;
+//     }
+//     about.classList.remove("about-animation");
+//   });
+// });
 
-//const properties = [projectsSection, aboutSection];
-observer.observe(projectsSection);
-observerSecond.observe(aboutSection);
+
+// observer.observe(projectsSection);
+// observerSecond.observe(aboutSection);
