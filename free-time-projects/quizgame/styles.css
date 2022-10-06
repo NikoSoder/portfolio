@@ -1,0 +1,230 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgb(92, 161, 196) 100%);
+}
+
+.starting-container h2 {
+    margin: 40px;
+    animation: h2-animation 3s ease-in-out;
+}
+
+@keyframes h2-animation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#start-game-button {
+    animation: start-game-button-animation 3s 1500ms forwards;
+    opacity: 0;
+}
+
+@keyframes start-game-button-animation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#start-game-button:hover {
+    background-color: rgb(92, 161, 196);
+}
+
+#countdown {
+    font-size: 40px;
+}
+
+.countdown {
+    animation: countdown-animation 1000ms forwards;
+}
+
+@keyframes countdown-animation {
+    0% { 
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% { transform: scale(1.8); }
+    100% { 
+        transform: scale(1); 
+        opacity: 1;
+    }
+}
+
+.timer-bar-container {
+    height: 9px;
+    border-radius: 5px;
+    width: 269px; 
+    background-color: rgb(234, 190, 190);
+    position: absolute;
+    bottom: 403px;
+}
+
+.timer-bar-container .timer-bar {
+    border-radius: 5px;
+    height: 100%;
+    background-color: rgb(92, 161, 196);
+}
+
+.timer-bar-animation {
+    animation: timer-animation 16s linear reverse; 
+}
+
+@keyframes timer-animation {
+    0%{ width: 0%; }
+    100%{ width: 100%; }
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    position: relative;
+}
+
+.quiz-container {
+    animation: quiz-animation 1.5s;
+}
+
+@keyframes quiz-animation {
+    0%{
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.question {
+    text-align: center;
+    margin: 0px 20px 30px 20px;
+    font-size: 20px;
+}
+
+.question-num {
+   margin-right: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    font-size: 19px;  
+    margin: 0px 0px 40px 0px;  
+    animation: transform-animation 1s forwards;
+}
+
+.button-style {
+    font-size: 18px;
+    width: 300px;
+    margin: 7px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    bottom: 420px;
+    border: 1px solid black;
+    padding: 0px 30px 0px 30px;
+    border-radius: 5px;
+}
+
+.loader {
+    border: 10px solid #f3f3f3; 
+    border-top: 10px solid rgb(92, 161, 196); 
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#play-again-button{
+    animation: transform-animation 1s forwards;
+}
+
+#play-again-button:hover {
+    background-color: rgb(92, 161, 196);
+}
+    
+@keyframes transform-animation {
+    0%{
+        opacity: 0;
+        transform: scale(0.5) translateY(-100px);
+    }
+    100%{
+        transform: scale(1) translateX(0px);
+        opacity: 1;
+    }
+}
+
+#timer {
+    background-color: rgb(92, 161, 196);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.right-answer {
+    background-color: rgb(66, 154, 66);
+    animation: right-answer-animation 500ms;
+}
+
+.wrong-answer {
+    background-color: rgba(242, 45, 45, 0.979);
+    animation: wrong-answer-animation 500ms ease-in-out;
+}
+
+@keyframes wrong-answer-animation {
+    0% { transform: translate(0); }
+    20% { transform: translate(1em); }
+    40% { transform: translate(-1em); }
+    60% { transform: translate(1em); }
+    80% { transform: translate(-1em); }
+    100% { transform: translate(0); }
+}
+
+@keyframes right-answer-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.show-right-answer {
+    background-color: rgb(66, 154, 66);
+    animation: show-answer 500ms;
+}
+
+@keyframes show-answer {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}

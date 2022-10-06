@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- START GAME -->
+    <div class="starting-container main-container">
+      <h2>QUIZ</h2>
+      <button class="button-style" id="start-game-button">Start game</button>
+    </div>
+    <!-- COUNTDOWN -->
+    <div class="countdown-container main-container hidden">
+      <p id="countdown"></p>
+    </div>
+    <!-- QUIZ -->
+    <div class="quiz-container main-container hidden">
+      <div class="timer-bar-container">
+        <div class="timer-bar"></div>
+      </div>
+      <div class="quiz-info">
+        <div class="question-num">
+          <p id="question-number">Question 1/5</p>
+        </div>
+        <div class="timer-info">
+          <p>Time left <span id="timer"></span></p>
+        </div>
+      </div>
+
+      <div class="question"></div>
+      <button class="answer button-style"></button>
+      <button class="answer button-style"></button>
+      <button class="answer button-style"></button>
+      <button class="answer button-style"></button>
+    </div>
+    <!-- ENDING SCREEN -->
+    <div class="ending-container main-container hidden">
+      <p id="result"></p>
+      <button id="play-again-button" class="button-style">Play again</button>
+    </div>
+    <!-- LOADING SCREEN -->
+    <div class="loading-screen main-container hidden">
+      <div class="loader hidden"></div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
