@@ -252,6 +252,10 @@ article video {
   padding: 0 0 1rem 0;
 }
 
+.schoolwork-ul li a:hover {
+  color: #635bff;
+}
+
 .schoolwork-ul li a::after {
   font: var(--fa-font-solid);
   padding-left: 1rem;
@@ -259,6 +263,12 @@ article video {
   /* color: #635bff; */
   color: black;
 }
+
+/* #schoolwork-article div {
+  background-color: #edf2f7;
+  padding: 1rem;
+  box-shadow: 11px 20px 0px 0px rgb(199, 210, 221,0.7);
+} */
 
 
 
@@ -341,6 +351,12 @@ ul li span {
   main {
     padding: 4rem 10rem 0 10rem;
     background-color: white;
+  }
+
+  #schoolwork-article div {
+    background-color: #edf2f7;
+    padding: 1rem;
+    box-shadow: 11px 13px 0px 0px rgb(199, 210, 221,0.7);
   }
 }
 
