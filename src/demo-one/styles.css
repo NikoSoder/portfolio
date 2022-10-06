@@ -44,7 +44,7 @@ body {
 }
 
 .a-tag-style {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: black;
 }
@@ -245,6 +245,22 @@ article video {
 #a-tag-first {
   margin-right: 1rem;
 }
+
+/* PROJECTS SCHOOLWORK */
+
+.schoolwork-ul > * {
+  padding: 0 0 1rem 0;
+}
+
+.schoolwork-ul li a::after {
+  font: var(--fa-font-solid);
+  padding-left: 1rem;
+  content: "\f054";
+  /* color: #635bff; */
+  color: black;
+}
+
+
 
 /* FOOTER */
 
