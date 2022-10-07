@@ -79,6 +79,14 @@ hr {
   margin: 3rem 0 3rem 0;
 }
 
+.max-width {
+  max-width: 736px;
+}
+
+.center-text {
+  text-align: center;
+}
+
 /* HOME PAGE */
 
 .home-section {
@@ -95,19 +103,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #edf2f7;
+  padding: 3rem;
+  width: 100%;
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%);
 }
 
 .button-div {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-nav {
-  background-color: #edf2f7;
-  padding: 3rem;
-  width: 100%;
-  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%);
 }
 
 .introduction {
@@ -163,19 +168,34 @@ nav {
 }
 
 .about-container div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 1rem;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  /* margin: 1rem;
+  flex-wrap: wrap; */
 }
 
-.about-container div img {
+.about-container div ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0 1rem 0;
+}
+
+.about-container div ul li {
+  background: #e4e4ea;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.8rem;
+  margin: 1rem 1rem 0 1rem;
+}
+
+/* .about-container div img {
   width: 70px;
   height: 70px;
   object-fit: scale-down;
   margin: 2rem;
-}
+} */
 
 /* PROJECTS PAGE */
 
@@ -210,7 +230,9 @@ article video {
   display: block;
 }
 
-.project-info-container {
+.project-info-container p {
+  max-width: 396px;
+  margin-bottom: 3rem;
 }
 
 .a-buttons-container {
@@ -248,6 +270,10 @@ article video {
 
 /* PROJECTS SCHOOLWORK */
 
+/* #schoolwork-article {
+  text-align: center;
+} */
+
 .schoolwork-ul > * {
   padding: 0 0 1rem 0;
 }
@@ -269,8 +295,6 @@ article video {
   padding: 1rem;
   box-shadow: 11px 20px 0px 0px rgb(199, 210, 221,0.7);
 } */
-
-
 
 /* FOOTER */
 
@@ -338,13 +362,13 @@ ul li span {
 }
 
 @media only screen and (min-width: 840px) {
-  .about-container {
+  /* .about-container {
     display: flex;
   }
 
   .about-container > * {
     flex: 1;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -356,7 +380,7 @@ ul li span {
   #schoolwork-article div {
     background-color: #edf2f7;
     padding: 1rem;
-    box-shadow: 11px 13px 0px 0px rgb(199, 210, 221,0.7);
+    box-shadow: 11px 13px 0px 0px rgb(199, 210, 221, 0.7);
   }
 }
 
