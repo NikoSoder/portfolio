@@ -76,19 +76,6 @@ body {
   padding-right: 2rem;
 }
 
-hr {
-  border-top: 1px solid #edf2f7;
-  margin-bottom: 2rem;
-}
-
-.hr-margin {
-  margin: 3rem 0 3rem 0;
-}
-
-/* .max-width {
-  max-width: 736px;
-} */
-
 .center-text {
   text-align: center;
 }
@@ -114,7 +101,8 @@ header {
   background-color: #edf2f7;
   padding: 3rem;
   width: 100%;
-  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%);
+  /* box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%); */
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
 }
 
 .button-div {
@@ -206,6 +194,11 @@ main {
   margin: 1rem 1rem 0 1rem;
 }
 
+.about-container div ul li:hover {
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%);
+  
+}
+
 /* .about-container div img {
   width: 70px;
   height: 70px;
@@ -272,6 +265,7 @@ article video {
 
 .projects-a:hover {
   background-color: #0a2540;
+  box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
 }
 
 .projects-a::after {
@@ -290,7 +284,7 @@ article video {
   text-align: center;
 } */
 
-.schoolwork-ul > * {
+/* .schoolwork-ul > * {
   padding: 0 0 1rem 0;
 }
 
@@ -303,8 +297,8 @@ article video {
   padding-left: 1rem;
   content: "\f054";
   /* color: #635bff; */
-  color: black;
-}
+  /* color: black;
+} */ 
 
 /* #schoolwork-article div {
   background-color: #edf2f7;
@@ -356,9 +350,10 @@ ul li span {
     flex-direction: row;
   }
 
-  /* .projects-container article > * {
-    flex: 1;
-  } */
+  article video {
+    box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+  }
 }
 
 /* SCROLL ANIMATIONS MEDIA QUERY */
