@@ -19,7 +19,6 @@ Project is created with:
 
 # To Do:
 
-- Margin auto to main
 - Clean up css files
 - Style skills list
 - Style buttons
