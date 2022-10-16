@@ -58,7 +58,7 @@ body {
 /* MARGINS / PADDINGS */
 
 .margin-bottom {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .margin-sides {
@@ -180,6 +180,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: white;
+  border-bottom: 1px solid #E4E4EA;
 }
 
 .about-container div {
@@ -194,7 +195,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 1rem 0 1rem 0;
+  margin: 2rem 0 4rem 0;
 }
 
 .about-container div ul li {
@@ -245,9 +246,9 @@ article video {
   display: block;
 }
 
-.project-info-container p {
-  /* max-width: 396px; */
-  margin-bottom: 3rem;
+.project-info-container {
+  text-align: center;
+
 }
 
 .a-buttons-container {
