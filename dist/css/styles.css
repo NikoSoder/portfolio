@@ -140,18 +140,7 @@ header {
   color: #2a2e32;
 }
 
-@keyframes introduction-animation {
-  0% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
+
 
 /* MAIN CONTENT */
 
@@ -384,10 +373,17 @@ ul li span {
 
 @media only screen and (min-width: 1200px) {
 
-  #schoolwork-article div {
-    background-color: #edf2f7;
-    padding: 1rem;
-    box-shadow: 11px 13px 0px 0px rgb(199, 210, 221, 0.7);
+  @keyframes introduction-animation {
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(1rem);
+    }
+    100% {
+      opacity: 0.4;
+    }
   }
 }
 
