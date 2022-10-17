@@ -147,6 +147,7 @@ header {
 main {
   max-width: 900px;
   margin: auto;
+  padding: 0 2rem 0 2rem;
 }
 
 /* ABOUT PAGE */
@@ -180,7 +181,7 @@ main {
   display: inline-block;
   padding: 1rem;
   font-size: 1.8rem;
-  margin: 1rem 1rem 0 1rem;
+  margin: 1rem;
 }
 
 .about-container div ul li:hover {
@@ -228,12 +229,11 @@ article video {
   display: block;
 }
 
-.project-info-container {
-  text-align: center;
 
-}
 
 .a-buttons-container {
+  
+  
 }
 
 .icon::after {
@@ -332,11 +332,24 @@ ul li span {
 }
 
 /* MEDIA QUERYS */
-/* @media only screen and (min-width: 520px) */
+
 @media only screen and (min-width: 564px) {
+  /* .projects-container article {
+    display: flex;
+    flex-direction: row;
+  } */
+
+  
+}
+
+@media only screen and (min-width: 610px) {
   .projects-container article {
     display: flex;
     flex-direction: row;
+  }
+
+  .project-info-container {
+    padding: 0 0 0 3rem;
   }
 
   article video {
