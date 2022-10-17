@@ -14,10 +14,6 @@ body {
   width: 100vw;
 }
 
-.ff {
-  line-height: 1.6;
-}
-
 /* TEXT FONT SIZE AND COLORS */
 
 .h1-tag-style {
@@ -89,11 +85,6 @@ body {
   background-color: white;
 }
 
-/* NAV LOGO */
-.fa-bars {
-  color: #edf0f8;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -101,7 +92,6 @@ header {
   background-color: #edf2f7;
   padding: 3rem;
   width: 100%;
-  /* box-shadow: 0 1px 8px 0 rgb(0 0 0 / 25%); */
   box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
 }
 
@@ -140,9 +130,7 @@ header {
   color: #2a2e32;
 }
 
-
-
-/* MAIN CONTENT */
+/* MAIN CONTENT ELEMENT */
 
 main {
   max-width: 900px;
@@ -159,14 +147,6 @@ main {
   align-items: center;
   background-color: white;
   border-bottom: 1px solid #E4E4EA;
-}
-
-.about-container div {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  /* margin: 1rem;
-  flex-wrap: wrap; */
 }
 
 .about-container div ul {
@@ -189,17 +169,9 @@ main {
   
 }
 
-/* .about-container div img {
-  width: 70px;
-  height: 70px;
-  object-fit: scale-down;
-  margin: 2rem;
-} */
-
 /* PROJECTS PAGE */
 
 .projects-section {
-  /* background-color: #2f4172; */
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -229,19 +201,6 @@ article video {
   display: block;
 }
 
-
-
-.a-buttons-container {
-  
-  
-}
-
-.icon::after {
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
 .projects-a {
   color: white;
   padding: 1rem 3rem 1rem 3rem;
@@ -257,43 +216,11 @@ article video {
   box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
 }
 
-.projects-a::after {
-  font: var(--fa-font-solid);
-  padding-left: 1rem;
-  content: "\f054";
-}
-
 #a-tag-first {
   margin-right: 1rem;
 }
 
-/* PROJECTS SCHOOLWORK */
 
-/* #schoolwork-article {
-  text-align: center;
-} */
-
-/* .schoolwork-ul > * {
-  padding: 0 0 1rem 0;
-}
-
-.schoolwork-ul li a:hover {
-  color: #635bff;
-}
-
-.schoolwork-ul li a::after {
-  font: var(--fa-font-solid);
-  padding-left: 1rem;
-  content: "\f054";
-  /* color: #635bff; */
-  /* color: black;
-} */ 
-
-/* #schoolwork-article div {
-  background-color: #edf2f7;
-  padding: 1rem;
-  box-shadow: 11px 20px 0px 0px rgb(199, 210, 221,0.7);
-} */
 
 /* FOOTER */
 
@@ -328,19 +255,11 @@ footer ul li a {
 
 ul li span {
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  margin-right: 0.5rem;
 }
 
 /* MEDIA QUERYS */
-
-@media only screen and (min-width: 564px) {
-  /* .projects-container article {
-    display: flex;
-    flex-direction: row;
-  } */
-
-  
-}
 
 @media only screen and (min-width: 610px) {
   .projects-container article {
@@ -358,33 +277,7 @@ ul li span {
   }
 }
 
-/* SCROLL ANIMATIONS MEDIA QUERY */
-
-@media only screen and (min-width: 698px) {
-  .projects-animation {
-    animation-name: wipe-from-left;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-
-  .about-animation {
-    animation-name: wipe-from-right;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-  }
-}
-
-@media only screen and (min-width: 840px) {
-  /* .about-container {
-    display: flex;
-  }
-
-  .about-container > * {
-    flex: 1;
-  } */
-}
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
 
   @keyframes introduction-animation {
     0% {
@@ -401,26 +294,7 @@ ul li span {
 }
 
 
-/* SCROLL ANIMATIONS */
 
-@keyframes wipe-from-left {
-  0% {
-    opacity: 0;
-    transform: translateX(-4rem);
-  }
 
-  100% {
-    opacity: 1;
-  }
-}
 
-@keyframes wipe-from-right {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
 
-  100% {
-    opacity: 1;
-  }
-}
