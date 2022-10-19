@@ -198,7 +198,15 @@ main {
 
 article video {
   max-width: 100%;
+  display: none;
+}
+
+article figure {
   display: block;
+}
+
+article figure img {
+  max-width: 100%;
 }
 
 .projects-a {
@@ -219,8 +227,6 @@ article video {
 #a-tag-first {
   margin-right: 1rem;
 }
-
-
 
 /* FOOTER */
 
@@ -270,8 +276,8 @@ ul li span {
   .project-info-container {
     padding: 0 0 0 3rem;
   }
-
-  article video {
+  
+  article figure {
     box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
     border-radius: 10px;
   }
@@ -290,6 +296,16 @@ ul li span {
     100% {
       opacity: 0.4;
     }
+  }
+
+  article video {
+    display: block;
+    box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+  }
+  
+  article figure {
+    display: none;
   }
 }
 
